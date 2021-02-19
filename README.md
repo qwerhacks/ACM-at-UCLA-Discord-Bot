@@ -1,66 +1,27 @@
-# Email Verification Bot for Discord
-A Discord Bot to verify domain email addresses for server permissions (via assigned role) without directly associating the email address with their discord account.
+# QWERHacksBot
+made with love and gay panic ♡
+## introduction
+hey hi hello! this is the repo for the qwer hacks welcome bot. this is going to be used at [qwer hacks 2021](qwerhacks.com) to welcome members to our discord server and allow them to set their screen name + pronouns as well as get verified as registered hackers who have shown up to our event on the day of!
 
-Verified usernames are stored with their email address in an `sqlite3` database and can be queried for moderation reasons.
+## setup
+(not that all these instructions are for local deployments. heroku / remote deployment? don't know her. yet.)
 
+start by cloning this repo to your local computer.
+### installation
+make sure you have relatively recent version of node.js + npm installed. for reference, sharvani is using the following versions:
+`node: v15.5.1 `
 
+`npm: 7.3.0`
 
-## Setup
+it's important to use recent versions for these because the discord package code does NOT work with older versions.
 
-### SendGrid
+package management (aka tracking of our dependencies, ease of installing everything) should be set up now (i hope?), so just try to run `npm install` to get everything you need locally installed. don't commit any of these additions (aka any node_modules folders that get created) to the repo for the sake of repo cleanliness (as far as i know....open to discussion here!)
 
-- get an API key and put it in `.env`  (read below)
-- put the sender email address in `config.js` (read below)
+## deployment (as of right now, local only) 
 
-- create a dynamic template with the following handlebars
-  - `{{nickname}}`
-  - `{{code}}`
-  - `{{email}}`
+run `node main.js`
 
+you'll know the code ran successfully if the code doesn't immediately error out, and the bot appears to be online (for longer than a couple minutes) within the qwer hacks server.
 
-
-### Discord App
-
-- put the Server ID in `config.js` (read below)
-- get an API key for your application and put it in `.env` (read below)
-
-
-
-### API Keys
-
-Create a `.env` file to store all your secret tokens and API Keys.
-
-```bash
-echo "export SENDGRID_API_KEY=<insert_sendgrid_api_key>" >> .env
-echo "export DISCORD_API_KEY=<insert_discord_app_api_key>" >> .env
-```
-
-
-
-### Config file
-
-Use `config.js` to set the following parameters,
-
-```js
-{
-  db_path: '<db_relative_location>',
-  allowed_domains: ['domain1.com', 'domain2.com'],
-  discord: {
-    server_id: '<discord_server_id>',
-    verified_role_name: 'Verified',
-  },
-  sendgrid: {
-    template_id: '<dynamic_template_id>',
-    sender: '<verified_sender_id>',
-  },
-}
-```
-
-
-
-## Running
-
-```bash
-npm run start
-```
-
+additionally, in the terminal the bot will print out 
+`Logged in as QWER Hacks Welcome Bot#7201!` if everything re: setup goes okay.
