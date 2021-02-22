@@ -18,8 +18,7 @@ it's important to use recent versions for these because the discord package code
 package management (aka tracking of our dependencies, ease of installing everything) should be set up now (i hope?), so just try to run `npm install` to get everything you need locally installed. don't commit any of these additions (aka any node_modules folders that get created) to the repo for the sake of repo cleanliness (as far as i know....open to discussion here!)
 
 ## deployment (as of right now, local only) 
-first, add your bot token in the last line of main.js (you can find the token in the discord developer portal page for your bot application under "CLIENT SECRET").
-for example, if your bot token is "12345ABC", the line should read client.login("12345ABC");
+first, find your bot token in the discord developer portal (go to applications > (your application name) > bot > and then click the copy button under "TOKEN"). then, add your bot token in the last line of main.js. for example, if your bot token is "12345ABC", the line should read client.login("12345ABC");
 
 run `node main.js`
 
