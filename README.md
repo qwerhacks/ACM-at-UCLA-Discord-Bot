@@ -31,10 +31,10 @@ package management (aka tracking of our dependencies, ease of installing everyth
 this section provides instructions for customizing the bot for a different discord server.
 
 #### bot token
-first, find your bot token in the [discord developer portal](https://discord.com/developers/applications) (go to (your application name) > bot > and then click the copy button under "TOKEN"). then, add your bot token in the last line of main.js. for example, if your bot token is "12345ABC", the line should read `client.login("12345ABC");`
+first, find your bot token in the [discord developer portal](https://discord.com/developers/applications) (go to (your application name) > bot > and then click the copy button under "TOKEN"). then, add your bot token in the last line of `main.js`. for example, if your bot token is "12345ABC", the line should read `client.login("12345ABC");`
 
 #### csv files
-the bot requires two csv files be placed in the same directory as main.js: hacker_emails.csv (containing only hacker emails) and collaborator_emails.csv (containing only collaborator emails). these files can be empty—as long as they are in the same directory as main.js, the bot will work.
+the bot requires two csv files be placed in the same directory as `main.js`: `hacker_emails.csv` (containing only hacker emails) and `collaborator_emails.csv` (containing only collaborator emails). these files can be empty—as long as they are in the same directory as `main.js`, the bot will work.
 
 #### config 
 you will need to update the config file with the server id and role names for your own discord server. you can also update the welcome message (the initial message that is DMed to users that join the server).
