@@ -1,7 +1,7 @@
 # QWERHacksBot
 made with love and gay panic ♡
 ## introduction
-hey hi hello! this is the repo for the qwer hacks welcome bot. this is going to be used at [qwer hacks 2021](qwerhacks.com) to welcome members to our discord server and allow them to set their screen name + pronouns as well as get verified as registered hackers who have shown up to our event on the day of!
+hey hi hello! this is the repo for the qwer hacks welcome bot. this is going to be used at [qwer hacks 2021](https://www.qwerhacks.com/) to welcome members to our discord server and allow them to set their screen name + pronouns as well as get verified as registered hackers who have shown up to our event on the day of!
 
 ## behavior
 When a new user joins the server, the bot will send them a direct message prompting them for their email, name, and pronouns in the following format: 
@@ -13,9 +13,7 @@ example: !iam joe@g.ucla.edu Joe Bruin he/him
 If the user responds with a properly formatted command, the bot checks whether the user's email is a valid hacker or collaborator email. If so, it assigns them the correct role ('hacker' or 'collaborator') that will allow them to access channels on the QWERHacks server. Finally, the bot adds the user's pronouns to the end of their discord nickname (display name).
 
 ## setup
-(not that all these instructions are for local deployments. heroku / remote deployment? don't know her. yet.)
-
-start by cloning this repo to your local computer.
+(note that all these instructions are for local deployments.) start by cloning this repo to your local computer.
 
 ### installation
 make sure you have relatively recent version of node.js + npm installed. for reference, sharvani is using the following versions:
