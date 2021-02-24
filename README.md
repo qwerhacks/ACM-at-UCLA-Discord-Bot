@@ -4,7 +4,7 @@ made with love and gay panic ♡
 hey hi hello! this is the repo for the qwer hacks welcome bot. this is going to be used at [qwer hacks 2021](https://www.qwerhacks.com/) to welcome members to our discord server and allow them to set their screen name + pronouns as well as get verified as registered hackers who have shown up to our event on the day of!
 
 ## behavior
-When a new user joins the server, the bot will send them a direct message prompting them for their email, name, and pronouns in the following format: 
+When a new user joins the discord server (by clicking an invitation link to the server, for example), the bot will send them a direct message prompting them for their email, name, and pronouns in the following format: 
 
 `!iam <email> <name> <pronouns>`
 
