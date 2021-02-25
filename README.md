@@ -4,26 +4,27 @@ made with love and gay panic ♡
 hey hi hello! this is the repo for the qwer hacks welcome bot. this is going to be used at [qwer hacks 2021](https://www.qwerhacks.com/) to welcome members to our discord server and allow them to set their screen name + pronouns as well as get verified as registered hackers who have shown up to our event on the day of!
 
 ## behavior
-When a new user joins the discord server (by clicking an invitation link to the server, for example), the bot will send them a direct message prompting them for their email, name, and pronouns in the following format: 
+when a new user joins the discord server (by clicking an invitation link to the server, for example), the bot will send them a direct message prompting them for their email, name, and pronouns in the following format: 
 
 `!iam <email> <name> <pronouns>`
 
 example: !iam joe@g.ucla.edu Joe Bruin he/him
 
-If the user responds with a properly formatted command, the bot checks whether the user's email is a valid hacker or collaborator email. If so, it assigns them the correct role ('hacker' or 'collaborator') that will allow them to access channels on the QWERHacks server. Finally, the bot adds the user's pronouns to the end of their discord nickname (display name).
+if the user responds with a properly formatted command, the bot checks whether the user's email is a valid hacker or collaborator email. if so, it assigns them the correct role ('hacker' or 'collaborator') that will allow them to access channels on the QWERHacks server. finally, the bot adds the user's pronouns to the end of their discord nickname (display name).
 
 ## setup
 (note that all these instructions are for local deployments.) start by cloning this repo to your local computer.
 
 ### installation
-make sure you have relatively recent version of node.js + npm installed. for reference, sharvani is using the following versions:
+make sure you have relatively recent version of node.js + npm installed. for example, the following versions work:
+
 `node: v15.5.1 `
 
 `npm: 7.3.0`
 
 it's important to use recent versions for these because the discord package code does NOT work with older versions.
 
-package management (aka tracking of our dependencies, ease of installing everything) should be set up now (i hope?), so just try to run `npm install` to get everything you need locally installed. don't commit any of these additions (aka any node_modules folders that get created) to the repo for the sake of repo cleanliness (as far as i know....open to discussion here!)
+you can run `npm install` in your cloned repo to get everything you need locally installed. don't commit any of these additions (aka any node_modules folders that get created) to the repo for the sake of repo cleanliness.
 
 ### customization
 this section provides instructions for customizing the bot for a different discord server.
